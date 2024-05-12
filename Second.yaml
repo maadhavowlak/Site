@@ -14,7 +14,7 @@ consumes:
 security:
   - basicAuth: []
 paths:
-  /Maadhav:
+  /Sparsh:
     get:
       responses:
         '200':
