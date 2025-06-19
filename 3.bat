@@ -36,5 +36,5 @@ for %%f in ("%FOLDER_PATH%\*.*") do (
 goto loop
 
 :end
-echo Script completed after 5 iterations.
+echo Script completed after 20 iterations.
 pause
